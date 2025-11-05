@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt_parent_project'
+name: 'dbt_demo_core'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
@@ -44,7 +44,7 @@ models:
   +persist_docs:
       relation: true
       columns: true
-  dbt_parent_project:
+  dbt_demo_core:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
