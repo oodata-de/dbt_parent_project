@@ -1,0 +1,11 @@
+packages:
+  - name: dbt_utils
+    package: dbt-labs/dbt_utils
+    version: 1.3.0
+  - name: dbt_snow_mask
+    package: entechlog/dbt_snow_mask
+    version: 0.2.7
+  - name: dbt_artifacts
+    package: brooklyn-data/dbt_artifacts
+    version: 2.9.3
+sha1_hash: b59ee69e770c71854d1ee86c0c1ccc216cf35806
