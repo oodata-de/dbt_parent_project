@@ -1,0 +1,48 @@
+[sqlfluff]
+# SQL dialect - use snowflake for dbt projects targeting Snowflake
+dialect = snowflake
+max_line_length = 120
+
+[sqlfluff:indentation]
+indented_using_on = true
+indentation_width = 4
+
+[sqlfluff:rules]
+# Common rules for dbt projects
+tab_space_size = 4
+max_line_length = 120
+allow_implicit_casting = true
+
+# L001 - Unnecessary whitespace
+whitespace_before_comma = False
+whitespace_after_comma = True
+
+# L002 - Mixed tabs and spaces
+mixed_tabs_spaces = True
+
+# L003 - Hard tabs
+tabs_use_spaces = True
+
+# L004 - Trailing whitespace
+trailing_whitespace = True
+
+# L005 - Comments should be uppercase
+comments_are_uppercase = False
+
+# L006 - Operators should have spaces
+operators_should_have_spaces = True
+
+# L010 - Keywords should be uppercase
+capitalisation_policy = upper
+
+# Excludes for dbt projects
+exclude_rules = L036
+
+[sqlfluff:rules:capitalisation]
+# Capitalize keywords
+capitalisation_policy = upper
+
+[sqlfluff:rules:aliasing]
+# Aliasing rules
+table_alias = non_reserved
+allow_scalar = true

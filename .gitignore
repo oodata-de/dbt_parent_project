@@ -4,3 +4,8 @@ dbt_packages/
 logs/
 
 profiles.yml
+
+.env
+.devcontainer/
+.vscode/
+setup/
